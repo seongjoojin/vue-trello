@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    code start!
+    <router-view></router-view>
   </div>
 </template>
 <script>
