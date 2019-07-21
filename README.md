@@ -37,3 +37,7 @@
 curl명령에서 json 데이터를 이쁘게 보려면 아래 프로그램?필요. ex) curl localhost:3000/health -v | jq
 
 https://stedolan.github.io/jq/
+
+### Ajax - HttpXMLRequst 객체
+
+https://developer.mozilla.org/ko/docs/Web/API/XMLHttpRequest
