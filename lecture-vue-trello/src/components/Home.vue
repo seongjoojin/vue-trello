@@ -1,5 +1,5 @@
 <template>
-	<div>
+  <div>
     Home
     <div>
       Board List:
@@ -13,11 +13,10 @@
 </template>
 
 <script>
-	export default {
-		name: "Home"
-	}
+export default {
+	name: 'Home'
+};
 </script>
 
 <style scoped>
-
 </style>
