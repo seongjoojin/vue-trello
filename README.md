@@ -30,7 +30,7 @@
 - 서버 라우팅 : 네이버, 구글
 - 브라우져 라우팅 : 구글메일, 트렐로
 
-## 3. 3. API 통신
+## 3. API 통신
 
 ### 백엔드 API 살펴보기
 
@@ -45,3 +45,9 @@ https://developer.mozilla.org/ko/docs/Web/API/XMLHttpRequest
 ### Axios 실전에서 사용하기
 
 axios를 호출하는 모듈을 별도로 만들어주는것이 좋음
+
+## 4. 인증
+
+### 인증 API
+
+실무에서는 token에 대한 만료시간도 대응해야함
