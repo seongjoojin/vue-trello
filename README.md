@@ -63,3 +63,7 @@ vue router에는 네비게이션 가드가 존재함.
 ### Vuex
 
 - 모든 컴포넌트에 대한 중앙 저장소 역할
+
+### 상태 (State)
+
+`yarn add vuex`
