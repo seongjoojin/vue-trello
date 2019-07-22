@@ -6,7 +6,7 @@ import Board from '../components/Board.vue'
 import Card from '../components/Card.vue'
 import NotFound from '../components/NotFound.vue'
 
-Vue.use(VueRouter);
+Vue.use(VueRouter)
 
 const requireAuth = (to, from, next) => {
   const isAuth = localStorage.getItem('token')
@@ -31,8 +31,7 @@ const router = new VueRouter({
       beforeEnter: requireAuth,
       children: [{
         path: 'c/:cid',
-        component: Card,
-        beforeEnter: requireAuth
+        component: Card
       }]
     },
     {
@@ -40,6 +39,6 @@ const router = new VueRouter({
       component: NotFound
     }
   ]
-});
+})
 
 export default router
