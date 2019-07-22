@@ -31,7 +31,8 @@ const router = new VueRouter({
       beforeEnter: requireAuth,
       children: [{
         path: 'c/:cid',
-        component: Card
+        component: Card,
+        beforeEnter: requireAuth,
       }]
     },
     {
