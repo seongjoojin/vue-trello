@@ -58,11 +58,8 @@ export default {
 					this.loading = false;
 				});
 		},
-		onAddBoard(title) {
-			board
-				.create(title)
-				.then(() => this.fetchData())
-				.catch();
+		onAddBoard() {
+			this.fetchData();
 		}
 	}
 };
