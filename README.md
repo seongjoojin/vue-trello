@@ -41,3 +41,7 @@ https://stedolan.github.io/jq/
 ### Ajax - HttpXMLRequst 객체
 
 https://developer.mozilla.org/ko/docs/Web/API/XMLHttpRequest
+
+### Axios 실전에서 사용하기
+
+axios를 호출하는 모듈을 별도로 만들어주는것이 좋음
