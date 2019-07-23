@@ -22,7 +22,6 @@
 </template>
 
 <script>
-import { board } from '../api';
 import AddBoard from './AddBoard.vue';
 import { mapState, mapMutations, mapActions } from 'vuex';
 
@@ -46,10 +45,10 @@ export default {
 	},
 	methods: {
 		...mapMutations(['SET_IS_ADD_BOARD']),
-		...mapActions(['FETCH_BOADS']),
+		...mapActions(['FETCH_BOARDS']),
 		fetchData() {
 			this.loading = true;
-			this.FETCH_BOADS().finally(() => {
+			this.FETCH_BOARDS().finally(_ => {
 				this.loading = false;
 			});
 		}
