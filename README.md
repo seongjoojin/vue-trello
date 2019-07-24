@@ -67,3 +67,7 @@ vue router에는 네비게이션 가드가 존재함.
 ### 상태 (State)
 
 `yarn add vuex`
+
+### 스토어 개선
+
+https://vuex.vuejs.org/kr/guide/structure.html
