@@ -2,7 +2,7 @@
   <div>
     <div class="board-wrapper">
       <div class="board">
-        <div class="board-head">
+        <div class="board-header">
           <span class="board-title">{{ board.title }}</span>
         </div>
         <div class="list-section-wrapper">
