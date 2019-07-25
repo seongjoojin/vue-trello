@@ -1,8 +1,8 @@
 <template>
   <div class="add-card">
-    <form>
-      <input class="form-control" type="text" ref="inputText" />
-      <button class="btn btn-success" type="submit">Add Card</button>
+    <form @submit.prevent="onSubmit">
+      <input class="form-control" type="text" v-model="inputTitle" ref="inputText" />
+      <button class="btn btn-success" type="submit" :disabled="invalidInput">Add Card</button>
       <a class="cancel-add-btn" href @click.prevent="$emit('close')">&times;</a>
     </form>
   </div>
@@ -15,8 +15,25 @@ export default {
 			inputTitle: ''
 		};
 	},
+	computed: {
+		invalidInput() {
+			return !this.inputTitle.trim();
+		}
+	},
 	mounted() {
-		this.$refs.inputText.focus()
+		this.$refs.inputText.focus();
+		// this.setupClickOutside(this.$el);
+	},
+	methods: {
+		onSubmit() {
+			console.log('submit');
+		},
+		setupClickOutside(el) {
+			document.querySelector('body').addEventListener('click', e => {
+				if (el.contains(e.target)) return;
+				this.$emit('close');
+			});
+		}
 	}
 };
 </script>
