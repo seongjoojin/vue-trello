@@ -53,5 +53,8 @@ export const card = {
       listId,
       pos
     })
+  },
+  fetch(id) {
+    return request('get', `/cards/${id}`)
   }
 }
