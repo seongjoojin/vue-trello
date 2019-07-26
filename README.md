@@ -71,3 +71,9 @@ vue router에는 네비게이션 가드가 존재함.
 ### 스토어 개선
 
 https://vuex.vuejs.org/kr/guide/structure.html
+
+## 7. 기본 플로우 구현
+
+### 카드 이동 1 - 로직분석
+
+https://github.com/bevacqua/dragula
