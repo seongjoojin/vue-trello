@@ -77,3 +77,7 @@ https://vuex.vuejs.org/kr/guide/structure.html
 ### 카드 이동 1 - 로직분석
 
 https://github.com/bevacqua/dragula
+
+### 카드 이동 2 - 구현
+
+`yarn add dragula`
