@@ -74,6 +74,17 @@ const actions = {
       .then(() => dispatch('FETCH_BOARD', {
         id: state.board.id
       }))
+  },
+  DELETE_CARD({
+    dispatch,
+    state
+  }, {
+    id
+  }) {
+    return api.card.destory(id)
+      .then(() => dispatch('FETCH_BOARD', {
+        id: state.board.id
+      }))
   }
 }
 
