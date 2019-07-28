@@ -35,9 +35,9 @@ export default {
 		},
 		updateTheme() {
 			this.$el.style.backgroundColor = this.navbarColor;
-
 			const body = document.querySelector('body');
-			if (body) body.style.backgroundColor = this.bodyColor;
+			if (!body) return;
+			body.style.backgroundColor = this.bodyColor;
 		}
 	}
 };
