@@ -33,6 +33,11 @@ const actions = {
       commit('SET_BOARD', data.item)
     })
   },
+  DELETE_BOARD(_, {
+    id
+  }) {
+    return api.board.destory(id)
+  },
   ADD_CARD({
     dispatch,
     state
