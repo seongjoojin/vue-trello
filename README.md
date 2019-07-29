@@ -81,3 +81,11 @@ https://github.com/bevacqua/dragula
 ### 카드 이동 2 - 구현
 
 `yarn add dragula`
+
+## 8. 추가 요구사항 구현
+
+### 정리
+
+1. 요구사항 : 기본 추가
+2. 기술조사 : Vue, Vuex, Vue-router, axios, dragula
+3. 기능구현 : spa, 인증, 트렐로
