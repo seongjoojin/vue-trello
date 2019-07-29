@@ -89,3 +89,30 @@ https://github.com/bevacqua/dragula
 1. 요구사항 : 기본 추가
 2. 기술조사 : Vue, Vuex, Vue-router, axios, dragula
 3. 기능구현 : spa, 인증, 트렐로
+
+## 9. 스스로 구현해볼 것들
+
+### 서버
+
+기본 구현
+
+[ ] sqlite => MySQL, PostgreSQL
+[ ] 위의 RDB로 변경 후 동작 체크
+
+추가 구현
+
+[ ] refresh token
+[ ] SNS login
+[ ] typescript
+[ ] typeORM
+
+### 프론트
+
+기본 구현
+
+[ ] access token 만료시 동작
+
+추가 구현
+
+[ ] refresh token 관련 동작 (만료 및 갱신 대응)
+[ ] typescript
