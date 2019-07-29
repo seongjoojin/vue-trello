@@ -96,23 +96,23 @@ https://github.com/bevacqua/dragula
 
 기본 구현
 
-[ ] sqlite => MySQL, PostgreSQL
-[ ] 위의 RDB로 변경 후 동작 체크
+- [ ] sqlite => MySQL, PostgreSQL
+- [ ] 위의 RDB로 변경 후 동작 체크
 
 추가 구현
 
-[ ] refresh token
-[ ] SNS login
-[ ] typescript
-[ ] typeORM
+- [ ] refresh token
+- [ ] SNS login
+- [ ] typescript
+- [ ] typeORM
 
 ### 프론트
 
 기본 구현
 
-[ ] access token 만료시 동작
+- [ ] access token 만료시 동작
 
 추가 구현
 
-[ ] refresh token 관련 동작 (만료 및 갱신 대응)
-[ ] typescript
+- [ ] refresh token 관련 동작 (만료 및 갱신 대응)
+- [ ] typescript
