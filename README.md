@@ -98,9 +98,11 @@ https://github.com/bevacqua/dragula
 
 - [ ] sqlite => MySQL, PostgreSQL
 - [ ] 위의 RDB로 변경 후 동작 체크
+- [ ] 배포
 
 추가 구현
 
+- [ ] 자동 배포
 - [ ] refresh token
 - [ ] SNS login
 - [ ] typescript
@@ -111,8 +113,10 @@ https://github.com/bevacqua/dragula
 기본 구현
 
 - [ ] access token 만료시 동작
+- [ ] 배포 
 
 추가 구현
 
+- [ ] 자동 배포
 - [ ] refresh token 관련 동작 (만료 및 갱신 대응)
 - [ ] typescript
