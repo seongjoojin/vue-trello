@@ -26,6 +26,12 @@ export const setAuthInHeader = token => {
   axios.defaults.headers.common['Authorization'] = token ? `Bearer ${token}` : null;
 }
 
+export const list = {
+  create(payload) {
+    return request('post', '/lists', payload)
+  }
+}
+
 export const board = {
   fetch(id) {
     return id ? request('get', `/boards/${id}`) : request('get', '/boards')

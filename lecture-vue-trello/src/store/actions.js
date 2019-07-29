@@ -54,6 +54,23 @@ const actions = {
         id: state.board.id
       }))
   },
+  ADD_LIST({
+    state,
+    dispatch
+  }, {
+    title,
+    boardId,
+    pos
+  }) {
+    return api.list.create({
+        title,
+        boardId,
+        pos
+      })
+      .then(_ => dispatch('FETCH_BOARD', {
+        id: state.board.id
+      }))
+  },
   ADD_CARD({
     dispatch,
     state
