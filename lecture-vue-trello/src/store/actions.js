@@ -87,6 +87,17 @@ const actions = {
         id: state.board.id
       }))
   },
+  DELETE_LIST({
+    state,
+    dispatch
+  }, {
+    id
+  }) {
+    return api.list.destory(id)
+      .then(_ => dispatch('FETCH_BOARD', {
+        id: state.board.id
+      }))
+  },
   ADD_CARD({
     dispatch,
     state
