@@ -1,25 +1,27 @@
 <template>
-  <div class="list">
+  <div class="list" :data-list-id="data.id" :data-list-pos="data.pos">
     <div class="list-header">
       <input
         v-if="isEditTitle"
         class="form-control input-title"
         type="text"
-        ref="inputTitle"
         v-model="inputTitle"
-        @blur="onBlurTitle"
+        ref="inputTitle"
         @keyup.enter="onSubmitTitle"
+        @blur="onBlurTitle"
       />
-      <div v-else class="list-header-title" @click="onClickTitle">{{ data.title }}</div>
+      <div v-else class="list-header-title" @click="onClickTitle">{{data.title}}</div>
     </div>
-    <div class="card-list">
-      <cardItem v-for="card in data.cards" :key="card.id" :data="card" />
+
+    <div class="card-list" :data-list-id="data.id">
+      <CardItem v-for="card in data.cards" :key="`${card.id}`" :data="card" />
     </div>
+
     <div v-if="isAddCard">
       <AddCard :list-id="data.id" @close="isAddCard=false" />
     </div>
     <div v-else>
-      <a href="#" class="add-card-btn" @click.prevent="isAddCard=true">&plus;Add a card..</a>
+      <a class="add-card-btn" href @click.prevent="isAddCard=true">&plus; Add a card...</a>
     </div>
   </div>
 </template>
@@ -28,7 +30,6 @@
 import { mapActions } from 'vuex';
 import AddCard from './AddCard.vue';
 import CardItem from './CardItem.vue';
-
 export default {
 	components: { AddCard, CardItem },
 	props: ['data'],
@@ -48,15 +49,13 @@ export default {
 			this.isEditTitle = true;
 			this.$nextTick(_ => this.$refs.inputTitle.focus());
 		},
+		onSubmitTitle() {
+			this.$refs.inputTitle.blur();
+		},
 		onBlurTitle() {
 			this.isEditTitle = false;
-		},
-		onSubmitTitle() {
-			this.onBlurTitle();
-
 			this.inputTitle = this.inputTitle.trim();
 			if (!this.inputTitle) return;
-
 			const id = this.data.id;
 			const title = this.inputTitle;
 			if (title === this.data.title) return;
@@ -67,7 +66,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .list {
 	background-color: #e2e4e6;
 	border-radius: 3px;
@@ -104,6 +103,7 @@ export default {
 .card-list {
 	flex: 1 1 auto;
 	overflow-y: scroll;
+	min-height: 10px;
 }
 .empty-card-item {
 	height: 10px;
