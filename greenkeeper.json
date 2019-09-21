@@ -1,0 +1,10 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "lecture-vue-trello-server/package.json",
+        "lecture-vue-trello/package.json"
+      ]
+    }
+  }
+}
